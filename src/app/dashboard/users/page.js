@@ -37,7 +37,7 @@ const page = () => {
   };
   console.log(fileds);
   return (
-    <section className="flex flex-row gap-4 w-full h-auto justify-between">
+    <section className="flex flex-col md:flex-row gap-4 w-full h-auto justify-between items-center">
       <div className="h-auto w-64 flex flex-col py-2 px-3 border my-3 gap-2">
         <div className="flex flex-col">
           <label htmlFor="title" className="text-gray-400 text-xs">
@@ -89,7 +89,7 @@ const page = () => {
       <div className="flex-1 flex-wrap flex-row h-auto my-3 flex   gap-2 ">
         <Todo todos={todos} users={users} />
       </div>
-      <div className="h-auto my-3 flex flex-col w-40  gap-2 border shadow-md fixed right-0 z-49">
+      <div className="hidden h-auto my-3 md:flex flex-col w-40  gap-2 border shadow-md fixed right-0 z-49">
         <Users data={users} />
       </div>
     </section>
