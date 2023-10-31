@@ -1,7 +1,7 @@
 "use client";
 
 import Sidebar from "@/components/SideNav";
-import BottomNavigation from "@/components/BottomNavigation";
+import Backdrop from "@/components/Backdrop";
 import Navbar from "@/components/Navbar";
 import { Store } from "@/context/Context";
 
@@ -14,6 +14,7 @@ const Template = ({ children }) => {
         <Navbar />
         <div>{children}</div>
       </div>
+      <Backdrop />
     </section>
   );
 };
